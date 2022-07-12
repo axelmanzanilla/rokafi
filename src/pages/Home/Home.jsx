@@ -1,10 +1,54 @@
-import { Main } from "./HomeStyles";
+import { Div, Header, Input, Ul } from "./HomeStyles";
 
 function Home() {
     return (
-        <Main>
-            Hola mundo!!!
-        </Main>
+        <Div>
+            <main>
+                <ul>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                    <li>A</li>
+                </ul>
+            </main>
+            <footer>Este es el footer</footer>
+        </Div>
     );
 }
 
