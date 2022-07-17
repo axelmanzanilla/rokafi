@@ -1,6 +1,6 @@
 function HamburguerButton() {
     return (
-        <label htmlFor="check-menu">E</label>
+        <label htmlFor="check-menu">MX</label>
     );
 }
 

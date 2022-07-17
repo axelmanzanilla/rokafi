@@ -9,6 +9,7 @@ function Header() {
 
     return (
         <header>
+            <HamburguerButton />
             <Checkbox type="checkbox" name="check-menu" id="check-menu" onClick={clickMenu} />
             <p>EL HEADER</p>
             Hambur
