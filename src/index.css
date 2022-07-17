@@ -3,10 +3,29 @@ body{
   padding: 0;
 }
 
+#root{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+main{
+  flex-grow: 1;
+}
+
 .block-body{
   overflow: hidden;
 }
 
 .show-menu{
+  visibility: visible !important;
+}
+
+.move-menu{
   margin-left: 0 !important;
+}
+
+.opacity-menu{
+  opacity: 0.5 !important;
 }

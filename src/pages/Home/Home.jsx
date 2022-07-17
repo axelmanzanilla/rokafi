@@ -1,54 +1,52 @@
-import { Div, Header, Input, Ul } from "./HomeStyles";
+import { Main } from "./HomeStyles";
 
 function Home() {
     return (
-        <Div>
-            <main>
-                <ul>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                    <li>A</li>
-                </ul>
-            </main>
-            <footer>Este es el footer</footer>
-        </Div>
+        <Main>
+            Este es el main
+            <ul>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+                <li>A</li>
+            </ul>
+        </Main>
     );
 }
 

@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
-export const Checkbox = styled.input`
-    display: none;
+export const Header = styled.header`
+    display: flex;
+    background-color: red;
+
+    @media (min-width: 768px){
+        background-color: blue;
+    }
 `;
 
-export const CollapsedMenu = styled.div.attrs({
-    className: 'collapsed-menu'
-})`
-    position: absolute;
-    width: 80%;
-    height: 100%;
-    margin-left: -80%;
-    background-color: green;
-    transition: margin 0.4s ease;
-    overflow-y: auto;
+export const MenuIcon = styled.div`
+    width: 40px;
+    height: 40px;
+    background-image: url("/icons/menu.svg");
 `;

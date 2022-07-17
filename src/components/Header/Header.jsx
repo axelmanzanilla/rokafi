@@ -1,21 +1,14 @@
-import { Checkbox, CollapsedMenu } from "./HeaderStyles";
-import HamburguerButton from "../Hamburguer/HamburguerButton";
+import { Header, MenuIcon } from "./HeaderStyles";
+import { OpenMenu } from "../../functions";
 
-function Header() {
-    function clickMenu(){
-        document.querySelector('body').classList.toggle('block-body');
-        document.querySelector('.collapsed-menu').classList.toggle('show-menu');
-    }
-
-    return (
-        <header>
-            <HamburguerButton />
-            <Checkbox type="checkbox" name="check-menu" id="check-menu" onClick={clickMenu} />
+function HeaderComponent() {
+        return (
+        <Header>
+            <MenuIcon onClick={OpenMenu}/>
             <p>EL HEADER</p>
             Hambur
-            <CollapsedMenu>Hola col</CollapsedMenu>
-        </header>
+        </Header>
     );
 }
 
-export default Header;
+export default HeaderComponent;
