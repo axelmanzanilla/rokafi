@@ -1,4 +1,4 @@
 export const headerStyles = {
-    headerHeight: '80px',
+    headerHeight: '64px',
     menuIconSize: '40px'
 }

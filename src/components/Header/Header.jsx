@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useNavigate, useSearchParams  } from "react-router-dom";
+import { Link, useNavigate, useSearchParams  } from "react-router-dom";
 import { Header } from "./HeaderStyles";
 import { OpenMenu } from "../../functions";
 import IconButton from "../IconButton/IconButton";
@@ -11,11 +11,11 @@ function HeaderComponent() {
 
     function submit(e){
         e.preventDefault();
-        navigate('/buscar?producto=' + document.forms[0].buscar.value);
+        navigate('/buscar?producto=' + document.forms[0].producto.value);
     }
 
     useEffect(() => {
-        document.forms[0].buscar.value = searchParams.get("producto");
+        document.forms[0].producto.value = searchParams.get("producto");
     }, [searchParams]);
 
     return (
@@ -25,7 +25,9 @@ function HeaderComponent() {
             <form method="get" onSubmit={submit}>
                 <input type="text" name="producto" id="producto" defaultValue={searchParams.get("producto")}/>
             </form>
-            <IconButton icon='shopping_cart' size={headerStyles.menuIconSize}/>
+            <Link to='/carrito'>
+                <IconButton icon='shopping_cart' size={headerStyles.menuIconSize}/>
+            </Link>
         </Header>
     );
 }
