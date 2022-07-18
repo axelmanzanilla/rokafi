@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import { CollapsedMenu, BackgroundMenu, VisibleMenu, CloseIcon, Nav } from "./MenuStyles";
+import { CollapsedMenu, BackgroundMenu, VisibleMenu, Nav } from "./MenuStyles";
 import { CloseMenu } from "../../functions";
+import IconButton from "../IconButton/IconButton";
+import { headerStyles } from "../../globalStyles";
 
 function Menu() {
-    
-
     return (
         <CollapsedMenu>
             <BackgroundMenu onClick={CloseMenu}/>
@@ -16,7 +16,7 @@ function Menu() {
                         <li><Link to='/contacto' onClick={CloseMenu}>Contacto</Link></li>
                     </ul>
                 </Nav>
-                <CloseIcon onClick={CloseMenu}/>
+                <IconButton icon='close' size={headerStyles.menuIconSize} click={CloseMenu}/>
             </VisibleMenu>
         </CollapsedMenu>
     );

@@ -7,7 +7,7 @@ export const OpenMenu = () => {
 }
 
 export const CloseMenu = () => {
-    document.querySelector('body').classList.remove('block-body')
+    document.querySelector('body').classList.remove('block-body');
     document.querySelector('.collapsed-menu').classList.remove('show-menu');
     document.querySelector('.visible-menu').classList.remove('move-menu');
     document.querySelector('.background-menu').classList.remove('opacity-menu');

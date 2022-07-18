@@ -6,6 +6,7 @@ import Menu from './components/Menu/Menu'
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home/Home';
+import Search from './pages/Search/Search';
 import Contact from './pages/Contact/Contact';
 import reportWebVitals from './reportWebVitals';
 
@@ -17,6 +18,7 @@ root.render(
       <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/buscar' element={<Search/>}/>
         <Route path='/contacto' element={<Contact/>}/>
       </Routes>
       <Footer/>
