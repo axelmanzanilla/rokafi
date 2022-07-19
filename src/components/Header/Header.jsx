@@ -21,7 +21,7 @@ function HeaderComponent() {
     return (
         <Header>
             <IconButton icon='menu' size={headerStyles.menuIconSize} click={OpenMenu}/>
-            <p>ROKAFI</p>
+            <p>TIENDA</p>
             <form method="get" onSubmit={submit}>
                 <input type="text" name="producto" id="producto" defaultValue={searchParams.get("producto")}/>
             </form>

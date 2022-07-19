@@ -1,5 +1,6 @@
-import { Target, Title, ProductContainer } from "./RecommendedStyles";
-import { Product, ProductTitle, ProductImgContainer, ProductImg } from "./RecommendedStyles";
+import { Container, Product, Title } from "./RecommendedStyles";
+import HomeTarget from "../HomeTarget/HomeTarget";
+import ImageCointainer from "../ImageContainer/ImageContainer";
 
 function Recommended(props) {
     let products = [
@@ -50,26 +51,23 @@ function Recommended(props) {
         }
     ]
     return (
-        <Target>
-            <Title>{props.title}</Title>
-            <ProductContainer>
+        <HomeTarget title={ props.title }>
+            <Container>
             {
                 products ? (
                     products.map((product, i) => 
                         <Product key={i}>
-                            <ProductTitle>{product.name}</ProductTitle>
-                            <ProductImgContainer>
-                                <ProductImg src={product.image} alt="" />
-                            </ProductImgContainer>
+                            <Title>{product.name}</Title>
+                            <ImageCointainer src={ product.image } w="100%" h="100px" />
                             $ {product.price}
                         </Product>
                     )
                 ) : (
-                    <p>hola</p>
+                    <p>ERROR</p>
                 )
             }
-            </ProductContainer>
-        </Target>
+            </Container>
+        </HomeTarget>
     );
 }
 

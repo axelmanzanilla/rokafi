@@ -7,7 +7,7 @@ export const Header = styled.header`
     align-items: center;
     justify-content: space-between;
     background-color: blue;
-    height: ${headerStyles.headerHeight};
+    height: ${ headerStyles.headerHeight };
 
     @media (min-width: 768px){
         background-color: blue;

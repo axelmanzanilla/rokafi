@@ -4,31 +4,23 @@ import { Link } from "react-router-dom";
 export const Container = styled.ul`
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
-    overflow-x: scroll;
-    border-radius: 4px;
-
-    &::-webkit-scrollbar{
-        width: 0px;
-        height: 0px;
-    }
+    flex-wrap: wrap;
 `;
 
-export const Product = styled.li`
+export const Category = styled.li`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-right: 8px;
-    min-width: 120px;
-    height: 180px;
+    min-width: 100px;
+    height: 100px;
+    margin: 8px;
     border-radius: 4px;
-    background-color: red;
-
-    &:last-child{
-        margin: 0;
-    }
+    background-color: burlywood;
 `;
 
 export const Title = styled.h3`

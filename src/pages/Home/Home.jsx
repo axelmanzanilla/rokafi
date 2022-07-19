@@ -1,54 +1,14 @@
 import { Main } from "./HomeStyles";
 import Recommended from "../../components/Recommended/Recommended";
+import Categories from "../../components/Categories/Categories";
 
 function Home() {
     return (
         <Main>
             <Recommended title="Lo más nuevo"/>
             <Recommended title="Recomendado para ti"/>
-            Este es el main
-            <ul>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-                <li>A</li>
-            </ul>
+            <Categories />
+            <Recommended title="Regreso a clases"/>
         </Main>
     );
 }
