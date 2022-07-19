@@ -4,6 +4,7 @@ import { Header } from "./HeaderStyles";
 import { OpenMenu } from "../../functions";
 import IconButton from "../IconButton/IconButton";
 import { headerStyles } from "../../globalStyles";
+import Logo from "../Logo/Logo";
 
 function HeaderComponent() {
     const navigate = useNavigate();
@@ -21,7 +22,7 @@ function HeaderComponent() {
     return (
         <Header>
             <IconButton icon='menu' size={headerStyles.menuIconSize} click={OpenMenu}/>
-            <p>TIENDA</p>
+            <Logo />
             <form method="get" onSubmit={submit}>
                 <input type="text" name="producto" id="producto" defaultValue={searchParams.get("producto")}/>
             </form>

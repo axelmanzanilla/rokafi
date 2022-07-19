@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { theme } from "../../globalStyles";
 
 export const Container = styled.ul`
     display: flex;
@@ -24,7 +25,7 @@ export const Product = styled.li`
     min-width: 120px;
     height: 180px;
     border-radius: 4px;
-    background-color: red;
+    background-color: ${ theme.color1 };
 
     &:last-child{
         margin: 0;

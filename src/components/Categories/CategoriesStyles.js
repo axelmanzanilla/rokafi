@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 import { Link } from "react-router-dom";
 
 export const Container = styled.ul`
@@ -20,7 +21,7 @@ export const Category = styled.li`
     height: 100px;
     margin: 8px;
     border-radius: 4px;
-    background-color: burlywood;
+    background-color: ${ theme.color1 };
 `;
 
 export const Title = styled.h3`

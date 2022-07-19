@@ -6,7 +6,7 @@ function Search() {
     
     return (
         <Main>
-            Soy el Search y buscaste:
+            Buscaste:
             <p>{searchParams.get("producto")}</p>
         </Main>
     );

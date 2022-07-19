@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { headerStyles } from "../../globalStyles";
+import { theme, headerStyles } from "../../globalStyles";
 
 export const Header = styled.header`
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: blue;
+    background-color: ${ theme.color3 };
     height: ${ headerStyles.headerHeight };
 
     @media (min-width: 768px){

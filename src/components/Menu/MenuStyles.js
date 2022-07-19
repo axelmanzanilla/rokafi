@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { headerStyles } from "../../globalStyles";
+import { theme } from "../../globalStyles";
 
 export const CollapsedMenu = styled.div.attrs({
     className: 'collapsed-menu'
@@ -28,7 +28,7 @@ export const VisibleMenu = styled.div.attrs({
     className: 'visible-menu'
 })`
     display: flex;
-    background-color: blue;
+    background-color: ${ theme.color3 };
     height: auto;
     width: 80%;
     margin-left: -100%;

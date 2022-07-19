@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { theme } from "../../globalStyles";
 
 export const Target = styled.div`
     display: flex;
@@ -6,7 +7,7 @@ export const Target = styled.div`
     margin: 16px 4px 16px 4px;
     padding: 4px;
     border-radius: 4px;
-    background-color: white;
+    background-color: ${ theme.back2 };
 `;
 
 export const Title = styled.h2`

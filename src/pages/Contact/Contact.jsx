@@ -3,7 +3,7 @@ import { Main } from "./ContactStyles";
 function Contact() {
     return (
         <Main>
-            Soy el contacto
+            Buscanos en redes sociales
         </Main>
     );
 }

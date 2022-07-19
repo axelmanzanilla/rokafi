@@ -27,7 +27,7 @@ function Categories(props) {
             {
                 categorias ? (
                     categorias.map((categoria, i) =>
-                        <Category>
+                        <Category key={i}>
                             <ImageCointainer src={ categoria.image } w="60px" h="60px" />
                             <Title>{ categoria.title }</Title>
                         </Category>
