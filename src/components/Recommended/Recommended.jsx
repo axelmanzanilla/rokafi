@@ -56,11 +56,13 @@ function Recommended(props) {
             {
                 products ? (
                     products.map((product, i) => 
-                        <Product key={i}>
-                            <Title>{product.name}</Title>
-                            <ImageCointainer src={ product.image } w="100%" h="100px" />
-                            $ {product.price}
-                        </Product>
+                        <li key={i}>
+                            <Product to={`/${ product.name }`}>
+                                <Title>{product.name}</Title>
+                                <ImageCointainer src={ product.image } w="100%" h="100px" />
+                                $ {product.price}
+                            </Product>
+                        </li>
                     )
                 ) : (
                     <p>ERROR</p>

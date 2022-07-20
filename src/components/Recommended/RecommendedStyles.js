@@ -17,19 +17,17 @@ export const Container = styled.ul`
     }
 `;
 
-export const Product = styled.li`
+export const Product = styled(Link)`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 8px;
+    margin: 0 4px 0 4px;
     min-width: 120px;
     height: 180px;
     border-radius: 4px;
+    color: black;
     background-color: ${ theme.color1 };
-
-    &:last-child{
-        margin: 0;
-    }
+    text-decoration: none;
 `;
 
 export const Title = styled.h3`

@@ -1,9 +1,9 @@
-import { Container, Category, Title } from "./CategoriesStyles";
+import { Container, CategoryLink, Title} from "./CategoriesStyles";
 import HomeTarget from "../HomeTarget/HomeTarget";
 import ImageCointainer from "../ImageContainer/ImageContainer";
 
 function Categories(props) {
-    let categorias = [
+    let categories = [
         {
             "title": "Ropa",
             "image": "https://images.vexels.com/media/users/3/142546/isolated/preview/2f6d0faa355125320122dc57e8b07084-tshirt-icon-by-vexels.png"
@@ -19,18 +19,24 @@ function Categories(props) {
         {
             "title": "Playa",
             "image": "https://icon-library.com/images/beach-icon/beach-icon-19.jpg"
+        },
+        {
+            "title": "Ofertas",
+            "image": "https://icon-library.com/images/discount-icon-png/discount-icon-png-0.jpg"
         }
     ]
     return (
         <HomeTarget title="Categorías">
             <Container>
             {
-                categorias ? (
-                    categorias.map((categoria, i) =>
-                        <Category key={i}>
-                            <ImageCointainer src={ categoria.image } w="60px" h="60px" />
-                            <Title>{ categoria.title }</Title>
-                        </Category>
+                categories ? (
+                    categories.map((category, i) =>
+                        <li key={i}>
+                            <CategoryLink to={`/${ category.title.toLowerCase() }`}>
+                                <ImageCointainer src={ category.image } w="60px" h="60px" />
+                                <Title>{ category.title }</Title>
+                            </CategoryLink>
+                        </li>
                     )
                 ) : <>ERROR</>
             }

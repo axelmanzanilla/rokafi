@@ -12,7 +12,7 @@ export const Container = styled.ul`
     flex-wrap: wrap;
 `;
 
-export const CategoryLink = styled(Link)`
+export const Category = styled.li`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,9 +21,7 @@ export const CategoryLink = styled(Link)`
     height: 100px;
     margin: 8px;
     border-radius: 4px;
-    color: black;
     background-color: ${ theme.color1 };
-    text-decoration: none;
 `;
 
 export const Title = styled.h3`
