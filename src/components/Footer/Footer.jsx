@@ -3,7 +3,7 @@ import { Footer } from "./FooterStyles";
 function FooterComponent() {
         return (
         <Footer>
-            <p>La tienda S.A. de C.V.</p>
+            <p>ROKAFI S.A. de C.V.</p>
         </Footer>
     );
 }

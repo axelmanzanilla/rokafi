@@ -5,12 +5,25 @@ export const theme = {
     color4: '#DB60B2',
     color5: '#ED6EF9',
     back1: 'white',
-    back2: '#EDEDED'
+    back2: '#EDEDED',
+    white: 'white',
+    black: 'black'
 }
 
+export const icons = {
+    size: '44px',
+    font: '28px',
+    color: 'black'
+}
 
+export const logo = {
+    width: '40px'
+}
 
-export const headerStyles = {
-    headerHeight: '64px',
-    menuIconSize: '40px'
+export const header = {
+    height: '68px',
+}
+
+export const searchBar = {
+    height: '48px'
 }

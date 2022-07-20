@@ -1,15 +1,24 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { theme, headerStyles } from "../../globalStyles";
+import { theme, header } from "../../globalStyles";
 
 export const Header = styled.header`
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    color: white;
     background-color: ${ theme.color3 };
-    height: ${ headerStyles.headerHeight };
+    height: ${ header.height };
 
     @media (min-width: 768px){
         background-color: blue;
     }
+`;
+
+export const Placeholder = styled.div`
+    flex-grow: 1;
+`;
+
+export const A = styled(Link)`
+    text-decoration: none;
 `;

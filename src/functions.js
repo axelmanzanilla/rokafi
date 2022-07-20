@@ -1,4 +1,3 @@
-
 export const OpenMenu = () => {
     document.querySelector('body').classList.add('block-body');
     document.querySelector('.collapsed-menu').classList.add('show-menu');

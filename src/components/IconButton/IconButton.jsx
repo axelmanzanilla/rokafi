@@ -1,8 +1,8 @@
-import { Button } from "./IconButtonStyles";
+import { Span } from "./IconButtonStyles";
 
 function IconButton(props) {
-        return (
-            <Button size={props.size} onClick={props.click}>{props.icon}</Button>
+    return (
+        <Span size={ props.size } font={ props.font }onClick={props.click}>{props.icon}</Span>
     );
 }
 

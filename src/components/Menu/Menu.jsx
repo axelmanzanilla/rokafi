@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CollapsedMenu, BackgroundMenu, VisibleMenu, Nav } from "./MenuStyles";
 import { CloseMenu } from "../../functions";
 import IconButton from "../IconButton/IconButton";
-import { headerStyles } from "../../globalStyles";
+import { icons } from "../../globalStyles";
 
 function Menu() {
     return (
@@ -16,7 +16,7 @@ function Menu() {
                         <li><Link to='/contacto' onClick={CloseMenu}>Contacto</Link></li>
                     </ul>
                 </Nav>
-                <IconButton icon='close' size={headerStyles.menuIconSize} click={CloseMenu}/>
+                <IconButton icon='close' click={CloseMenu} size={ icons.size } font={ icons.font } />
             </VisibleMenu>
         </CollapsedMenu>
     );

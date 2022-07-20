@@ -1,13 +1,14 @@
 import styled from "styled-components";
 import { theme } from "../../globalStyles";
 
+// Prueba 1: height a 100vh
 export const CollapsedMenu = styled.div.attrs({
     className: 'collapsed-menu'
 })`
     position: absolute;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     visibility: hidden;
     transition: all 0.2s;
 `;
