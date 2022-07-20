@@ -9,9 +9,18 @@ function SearchBar(){
     let [focus, setFocus] = useState(false);
     let [searchParams, setSearchParams] = useSearchParams();
 
+    function OpenMenu(){
+        document.querySelector('.collapsed-menu').classList.add('show-menu');
+        document.querySelector('.background-menu').classList.add('opacity-menu');
+    }
+
+    function CloseMenu(){
+        document.querySelector('.collapsed-menu').classList.remove('show-menu');
+        document.querySelector('.background-menu').classList.remove('opacity-menu');
+    }
+
     function Submit(e){
         e.preventDefault();
-        // BlurSearchBar();
         document.activeElement.blur();
         navigate('/buscar?producto=' + document.forms['searchbar'].producto.value);
     }
@@ -29,8 +38,8 @@ function SearchBar(){
                 focus={focus}
                 placeholder={ focus ? "" : "Buscar" }
                 defaultValue={ searchParams.get('producto') }
-                onFocus={ () => setFocus(true) }
-                onBlur={ () => setFocus(false) } />
+                onFocus={ () => {setFocus(true); OpenMenu();} }
+                onBlur={ () => {setFocus(false); CloseMenu();} } />
             <IconButton icon='search' size={searchBar.height} font={ icons.font } click={Submit} />
         </Container>
     );

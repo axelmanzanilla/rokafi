@@ -1,16 +1,16 @@
 import styled from "styled-components";
 import { theme } from "../../globalStyles";
 
-// Prueba 1: height a 100vh
 export const CollapsedMenu = styled.div.attrs({
     className: 'collapsed-menu'
 })`
-    position: absolute;
+    position: fixed;
     display: flex;
     width: 100%;
     height: 100vh;
     visibility: hidden;
-    transition: all 0.2s;
+    transition: all 200ms;
+    z-index: 10;
 `;
 
 export const BackgroundMenu = styled.div.attrs({
@@ -20,9 +20,9 @@ export const BackgroundMenu = styled.div.attrs({
     background-color: black;
     width: 100%;
     height: 100%;
-    z-index: 9;
     opacity: 0;
-    transition: opacity 0.2s;
+    z-index: 9;
+    transition: opacity 200ms;
 `;
 
 export const VisibleMenu = styled.div.attrs({
@@ -33,7 +33,7 @@ export const VisibleMenu = styled.div.attrs({
     height: auto;
     width: 80%;
     margin-left: -100%;
-    transition: margin 0.2s ease;
+    transition: margin 200ms ease;
     overflow-y: scroll;
     z-index: 10;
 `;

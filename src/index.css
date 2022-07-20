@@ -1,3 +1,8 @@
+/* Para quitar la seleccion azul de android */
+*{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 body{
   margin: 0;
   padding: 0;
@@ -26,5 +31,5 @@ main{
 }
 
 .opacity-menu{
-  opacity: 0.7 !important;
+  opacity: 0.8 !important;
 }

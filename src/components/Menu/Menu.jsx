@@ -1,10 +1,16 @@
 import { Link } from "react-router-dom";
 import { CollapsedMenu, BackgroundMenu, VisibleMenu, Nav } from "./MenuStyles";
-import { CloseMenu } from "../../functions";
 import IconButton from "../IconButton/IconButton";
 import { icons } from "../../globalStyles";
 
 function Menu() {
+    function CloseMenu(){
+        document.querySelector('body').classList.remove('block-body');
+        document.querySelector('.collapsed-menu').classList.remove('show-menu');
+        document.querySelector('.visible-menu').classList.remove('move-menu');
+        document.querySelector('.background-menu').classList.remove('opacity-menu');
+    }
+    
     return (
         <CollapsedMenu>
             <BackgroundMenu onClick={CloseMenu}/>

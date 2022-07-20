@@ -11,8 +11,8 @@ export const theme = {
 }
 
 export const icons = {
-    size: '44px',
-    font: '28px',
+    size: '42px',
+    font: '36px',
     color: 'black'
 }
 
