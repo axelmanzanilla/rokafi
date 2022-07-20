@@ -11,12 +11,12 @@ function SearchBar(){
 
     function OpenMenu(){
         document.querySelector('.collapsed-menu').classList.add('show-menu');
-        document.querySelector('.background-menu').classList.add('opacity-menu');
+        document.querySelector('.background-menu').classList.add('opacity-searchbar');
     }
 
     function CloseMenu(){
         document.querySelector('.collapsed-menu').classList.remove('show-menu');
-        document.querySelector('.background-menu').classList.remove('opacity-menu');
+        document.querySelector('.background-menu').classList.remove('opacity-searchbar');
     }
 
     function Submit(e){

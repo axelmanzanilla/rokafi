@@ -10,6 +10,7 @@ import Search from './pages/Search/Search';
 import Cart from './pages/Cart/Cart';
 import Contact from './pages/Contact/Contact';
 import reportWebVitals from './reportWebVitals';
+import Category from './components/Categories/Categories';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
       <Header />
       <Routes>
         <Route path='/' element={ <Home /> } />
+        <Route path='/category' element={ <Category /> } />
         <Route path='/buscar' element={ <Search /> } />
         <Route path='/carrito' element={ <Cart /> } />
         <Route path='/contacto' element={ <Contact /> } />

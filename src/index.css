@@ -33,3 +33,7 @@ main{
 .opacity-menu{
   opacity: 0.8 !important;
 }
+
+.opacity-searchbar{
+  opacity: 0.4 !important;
+}
