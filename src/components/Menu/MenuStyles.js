@@ -5,7 +5,7 @@ import { icons } from "../../globalStyles";
 import { Span } from "../Icon/IconStyles";
 
 export const CollapsedMenu = styled.div.attrs({
-    className: 'collapsed-menu show-menu'
+    className: 'collapsed-menu'
 })`
     position: fixed;
     display: flex;
@@ -17,7 +17,7 @@ export const CollapsedMenu = styled.div.attrs({
 `;
 
 export const BackgroundMenu = styled.div.attrs({
-    className: 'background-menu opacity-menu'
+    className: 'background-menu'
 })`
     position: absolute;
     background-color: black;
@@ -29,7 +29,7 @@ export const BackgroundMenu = styled.div.attrs({
 `;
 
 export const VisibleMenu = styled.div.attrs({
-    className: 'visible-menu move-menu'
+    className: 'visible-menu'
 })`
     position: relative;
     display: flex;
