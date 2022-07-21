@@ -1,7 +1,9 @@
 function Profile() {
-    return (<div>
-        Este es tu perfil
-    </div>);
+    return (
+        <main>
+            Este es tu perfil
+        </main>
+    );
 }
 
 export default Profile;

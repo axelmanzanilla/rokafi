@@ -10,6 +10,7 @@ export const Span = styled.span.attrs({
     width: ${ props => props.size };
     height: ${ props => props.size };
     font-size: ${ props => props.font };
+    margin-right: ${ props => props.right };
     color: ${ icons.color };
     border: none;
     text-decoration: none;

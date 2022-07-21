@@ -1,5 +1,5 @@
 import { Header, Placeholder, A } from "./HeaderStyles";
-import IconButton from "../IconButton/IconButton";
+import Icon from "../Icon/Icon";
 import { icons } from "../../globalStyles";
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
@@ -14,11 +14,11 @@ function HeaderComponent(){
 
     return (
         <Header>
-            <IconButton icon='menu' click={OpenMenu} size={ icons.size } font={ icons.font } />
+            <Icon icon='menu' click={OpenMenu} size={ icons.size } font={ icons.font } />
             <Logo />
             <Placeholder />
             <SearchBar />
-            <A to='/carrito'><IconButton icon='shopping_cart' size={ icons.size } font={ icons.font }/></A>
+            <A to='/carrito'><Icon icon='shopping_cart' size={ icons.size } font={ icons.font }/></A>
         </Header>
     );
 }

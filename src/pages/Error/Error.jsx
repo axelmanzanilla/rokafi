@@ -5,7 +5,9 @@ import ImageCointainer from "../../components/ImageContainer/ImageContainer";
 
 function Error(props) {
     return (
-        <p>Esta pagina no existe</p>
+        <main>
+            Esta pagina no existe
+        </main>
     );
 }
 

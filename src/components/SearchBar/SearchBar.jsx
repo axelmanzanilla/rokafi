@@ -1,7 +1,7 @@
 import { Container, Input, Back } from "./SearchBarStyles";
 import { useEffect, useState } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
-import IconButton from "../IconButton/IconButton";
+import Icon from "../Icon/Icon";
 import { icons, searchBar } from "../../globalStyles";
 
 function SearchBar(){
@@ -40,7 +40,7 @@ function SearchBar(){
                 defaultValue={ searchParams.get('producto') }
                 onFocus={ () => {setFocus(true); OpenMenu();} }
                 onBlur={ () => {setFocus(false); CloseMenu();} } />
-            <IconButton icon='search' size={searchBar.height} font={ icons.font } click={Submit} />
+            <Icon icon='search' size={searchBar.height} font={ icons.font } click={Submit} />
         </Container>
     );
 }

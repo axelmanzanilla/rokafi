@@ -57,7 +57,7 @@ function Recommended(props) {
                 products ? (
                     products.map((product, i) => 
                         <li key={i}>
-                            <Product to={`/${ product.name }`}>
+                            <Product to={`/${ product.name.toLowerCase() }`}>
                                 <Title>{product.name}</Title>
                                 <ImageCointainer src={ product.image } w="100%" h="100px" />
                                 $ {product.price}

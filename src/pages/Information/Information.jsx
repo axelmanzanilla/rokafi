@@ -1,8 +1,8 @@
 function Information() {
     return (
-        <div>
+        <main>
             Por el momento no tenemos información
-        </div>
+        </main>
     );
 }
 

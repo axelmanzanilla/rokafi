@@ -4,8 +4,10 @@ import ImageCointainer from "../../components/ImageContainer/ImageContainer";
 
 function Category(props) {
     return (
-        <HomeTarget title={ props.category }>
-        </HomeTarget>
+        <main>
+            <HomeTarget title={ props.category }>
+            </HomeTarget>
+        </main>
     );
 }
 

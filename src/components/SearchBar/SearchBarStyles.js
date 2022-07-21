@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Span } from "../../components/IconButton/IconButtonStyles";
+import { Span } from "../../components/Icon/IconStyles";
 import { theme, icons, logo, header, searchBar } from "../../globalStyles";
 
 export const Container = styled.form`

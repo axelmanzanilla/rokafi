@@ -7,7 +7,7 @@ import Error from "../Error/Error";
 function Else(props) {
     const params = useParams();
     const categories = ['ofertas', 'playa', 'ropa', 'escuela', 'videojuegos']
-    const products = ['xbox', 'playstation5', 'nintendo', 'xiaomi']
+    const products = ['xbox', 'playstation', 'nintendo', 'xiaomi']
 
     if(categories.findIndex(c => params.input == c) >= 0){
         return (<Category category={ params.input } />);
